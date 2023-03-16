@@ -1,0 +1,47 @@
+{
+  "name": "flashbots-builder",
+  "version": "1.0.0",
+  "description": "\"Flashbots protocol enables a crypto wallet to submit a sequence of ethereum transactions in one block, away from the prying eyes of frontrunning bots and miners, while being able to pay the gas fee for such transactions with another crypto wallet.\"",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "start": "npx ts-node --project tsconfig.json src/index.ts",
+    "build": "npx tsc",
+    "prepare": "npm run build",
+    "lint": "npx eslint src"
+  },
+  "author": "Feyijinmi Adegoke Elijah",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feyi-tech/flashbots-builder.git"
+  },
+  "keywords": [
+    "flashbots",
+    "ethers",
+    "smart",
+    "contract",
+    "ethereum",
+    "bsc"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feyi-tech/flashbots-builder/issues"
+  },
+  "homepage": "https://github.com/feyi-tech/flashbots-builder#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.165",
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0"
+  },
+  "dependencies": {
+    "@flashbots/ethers-provider-bundle": "^0.4.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.4.2",
+    "lodash": "^4.17.20",
+    "log-timestamp": "^0.3.0",
+    "ts-node": "^9.1.0",
+    "typescript": "^4.1.2"
+  }
+}
